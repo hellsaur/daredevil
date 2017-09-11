@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Matt Murdock</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    body{
+        position:absolute;
+        background-image: url("images/daredevilcomic.jpg");
+        width:100%;
+        height:1200px;
+        z-index: -10;
+    }
+    #bg{
+        position: absolute;
+        width:100%;
+        height:900px;
+        background-color: rgba(255,0,0,.5);
+        z-index: -2;
+    }
+    header{
+        background-color: black;
+        width: 100%;
+        height: 600px;;
+    }
+    
+    #headerImg{
+        background-image: url(images/ddheader.jpg);
+        height:600px;
+        background: cover;
+    }
+    #profile{
+        position: absolute;
+    }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+      <ul>  
+          <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
+            <div class="list">
+                <a href="#"><img src="images/Matt%20Murdock.png" width="75"></a>
+                <a href="#"><img src="images/Karen%20Page.png" width="75"></a>
+                <a href="#"><img src="images/Foggy%20Nelson.png" width="75"></a>
+                <a href="#"><img src="images/Claire%20Temple.png" width="75"></a>
+                <a href="#"><img src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="#"><img src="images/elektra.jpg" width="75"></a>
+                <a href="#"><img src="images/punisher.png" width="75"></a>
+                 </div>
+           </li>
+          
+     </ul>
+     
+     </nav>
+     
+   <div id="headerImg"></div>
+    
+    
+</header>
+    <div class="profile">
+        <img src="images/Matt%20Murdock.png" width="200">
+    </div>
+    <div class="profile2">
+        <img src="images/profile2.png" width="200">
+    </div>
+    <div id="char">Matthew Murdock</div>
+    <div id="text">
+    <p>
+    Abandoned by his mother, Matt Murdock was raised by his father, boxer "Battling Jack" Murdock, in Hell's Kitchen. Realizing that rules were needed to prevent people from behaving badly, young Matt decided to study law; however, when he saved a man from an oncoming truck, it spilled a radioactive cargo that rendered Matt blind while enhancing his remaining senses. Under the harsh tutelage of blind martial arts master Stick, Matt mastered his heightened senses and became a formidable fighter. He also attended Columbia University Law School alongside his best friend, Franklin "Foggy" Nelson.
+
+<!--More on Marvel.com: http://marvel.com/universe/Daredevil_(Matthew_Murdock)#ixzz4sObB6AgW    -->
+    </p>
+    </div>
+    <div id="bg"></div>
+    <div class="slide">   
+        <img class="slideShow" src="images/matt1.jpg" height="500" width="900">
+        <img class="slideShow" src="images/matt2.jpg" height="500" width="900">
+        <img class="slideShow" src="images/matt3.png" height="500" width="900">
+        <img class="slideShow" src="images/matt4.png" height="500" width="900">
+        <img class="slideShow" src="images/matt5.jpg" height="500" width="900">
+    </div>
+   <a class= "backButton" onclick="nextImg(-1)">&#10094;</a>
+   <a class= "forwardButton" onclick="nextImg(+1)">&#10095;</a>
+<script>
+    
+    var slidePos = 1;
+display(slidePos);
+
+function nextImg(n) {
+    display(slidePos += n);
+}
+
+function display(n) {
+    var i;
+    var x = document.getElementsByClassName("slideShow");
+    if (n > x.length) {slidePos = 1} 
+    if (n < 1) {slidePos = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slidePos-1].style.display = "block"; 
+}
+    
+</script>
+</body>
+<footer>
+     <!-- table goes here-->
+        
+            <table>
+                 <tr>
+                     <td><a href="#"><img src="images/marvelicon.png" height="75" width="100"></a></td>
+                     <td> <a href="#" height="75" width="75"><img src="images/instagram.svg" height="75" width="75"></a></td>
+                     <td> <a href="#" height="75" width="75"><img src="images/twitter.png" height="75" width="75"></a></td>
+                </tr>
+
+            </table>
+</footer>
+</html>
