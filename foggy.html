@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>Matt Murdock</title>
+    <title>Foggy Nelson</title>
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <style>
     body{
         position:absolute;
-        background-image: url("images/daredevilcomic.jpg");
+        background-image: url("images/foggybg.jpg");
         width:100%;
         height:1200px;
         z-index: -10;
@@ -15,21 +15,64 @@
         position: absolute;
         width:100%;
         height:900px;
-        background-color: rgba(255,0,0,.5);
+        background-color: rgba(255,255,0,.5);
         z-index: -2;
     }
     header{
         background-color: black;
         width: 100%;
-        height: 600px;;
+        height: 600px;
     }
     
     #headerImg{
-        background-image: url(images/ddheader.jpg);
-        height:600px;
         background: cover;
+        margin-left: 200px;
+         box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+
     }
+    .profile{
+    position: absolute;
+    top:40%;
+    left:2%;
+    transform: translateX(-50%), translateY(-50%); 
+}
+.profile img{
+    border: 20px solid rgba(255,255,0,.3);
+    border-radius: 50%;
+}
+  #text{
+    font-size: 20px;
+    padding:20px;
+    position: absolute;
+    left:300px;
+    top:700px;
+    height: 300px;
+    width: 600px;
+    background-color:rgba(255,255,255,.6);
+    box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+}
+    #char{
+    position: absolute;
+    font-size: 90px;
+    left: 300px;
+    top:580px;
+    color:black;
+    font-family:'ComicBook';
+     
+}
+@font-face {
+    font-family: 'ComicBook';
+    src: url(font/ComicBook.otf);
     
+}
+    .slide{
+    position: absolute;
+    top:1070px;
+    left:25%;
+    transform: translateX(-50%), translateY(-50%);
+    
+ }
+  
 </style>
 <body>
 <header>
@@ -38,10 +81,10 @@
           <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
             <div class="list">
                 <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
-                <a href="#"><img src="images/Karen%20Page.png" width="75"></a>
+                <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
                 <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
-                <a href="#"><img src="images/Claire%20Temple.png" width="75"></a>
-                <a href="#"><img src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
+                <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
                 <a href="#"><img src="images/Elektra.png" width="75"></a>
                 <a href="#"><img src="images/punisher.png" width="75"></a>
                  </div>
@@ -51,31 +94,31 @@
      
      </nav>
      
-   <div id="headerImg"></div>
+   <div id="headerImg">
+    <img src="images/foggyheader.jpg" height="600">
+    </div>
     
     
 </header>
     <div class="profile">
-        <img src="images/Matt%20Murdock.png" width="200">
+        <img src="images/Foggy%20Nelson.png" width="200">
     </div>
-    <div class="profile2">
-        <img src="images/profile2.png" width="200">
-    </div>
-    <div id="char">Matthew Murdock</div>
+    
+    <div id="char">Foggy Nelson</div>
     <div id="text">
     <p>
-    Abandoned by his mother, Matt Murdock was raised by his father, boxer "Battling Jack" Murdock, in Hell's Kitchen. Realizing that rules were needed to prevent people from behaving badly, young Matt decided to study law; however, when he saved a man from an oncoming truck, it spilled a radioactive cargo that rendered Matt blind while enhancing his remaining senses. Under the harsh tutelage of blind martial arts master Stick, Matt mastered his heightened senses and became a formidable fighter. He also attended Columbia University Law School alongside his best friend, Franklin "Foggy" Nelson.
+    Franklin P. Nelson, nicknamed "Foggy," is the son of Rosalind "Razor" Sharpe, a ruthless attorney who deserted her husband not long after their son was born. Nelson rarely saw his mother during his youth, instead being raised by his father and stepmother. Nevertheless, his mother's career motivated him to study pre-Law at State University, where he quickly befriended his roommate, Matt Murdock, whom he eventually followed to Columbia University and Harvard Law School. Murdock, despite his blindness, occasionally used his physical skills to protect Nelson from campus bullies. Nelson did not realize that Murdock possessed enhanced senses which he would eventually use as the costumed hero Daredevil. Nelson was temporarily placed into the witness protection program after faking his death.
 
-<!--More on Marvel.com: http://marvel.com/universe/Daredevil_(Matthew_Murdock)#ixzz4sObB6AgW    -->
+<!--More on Marvel.com: http://marvel.com/universe/Nelson,_Foggy#ixzz4sPKek7xS-->
     </p>
     </div>
     <div id="bg"></div>
     <div class="slide">   
-        <img class="slideShow" src="images/matt1.jpg" height="500" width="900">
-        <img class="slideShow" src="images/matt2.jpg" height="500" width="900">
-        <img class="slideShow" src="images/matt3.png" height="500" width="900">
-        <img class="slideShow" src="images/matt4.png" height="500" width="900">
-        <img class="slideShow" src="images/matt5.jpg" height="500" width="900">
+        <img class="slideShow" src="images/foggy1.jpg" height="500" width="900">
+        <img class="slideShow" src="images/foggy2.jpg" height="500" width="900">
+        <img class="slideShow" src="images/foggy3.jpg" height="500" width="900">
+        <img class="slideShow" src="images/foggy4.jpg" height="500" width="900">
+        <img class="slideShow" src="images/foggy5.jpg" height="500" width="900">
     </div>
    <a class= "backButton" onclick="nextImg(-1)">&#10094;</a>
    <a class= "forwardButton" onclick="nextImg(+1)">&#10095;</a>

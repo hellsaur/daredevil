@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Wilson Fisk</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    body{
+        position:absolute;
+        background-image: url("images/fiskbg.jpg");
+        width:100%;
+        height:1200px;
+        z-index: -10;
+    }
+    #bg{
+        position: absolute;
+        width:100%;
+        height:900px;
+        background-color: rgba(105,0,183,.5);
+        z-index: -2;
+    }
+    header{
+        background-color: black;
+        width: 100%;
+        height: 600px;;
+    }
+    
+    #headerImg{
+        background: cover;
+        margin-left: 300px;
+         box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+
+    }
+    .profile{
+    position: absolute;
+    top:40%;
+    left:2%;
+    transform: translateX(-50%), translateY(-50%); 
+}
+.profile img{
+    border: 20px solid rgba(0,0,0,.3);
+    border-radius: 50%;
+}
+  #text{
+    font-size: 20px;
+    padding:20px;
+    position: absolute;
+    left:300px;
+    top:700px;
+    height: 300px;
+    width: 600px;
+    background-color:rgba(255,255,255,.6);
+    box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+}
+    #char{
+    position: absolute;
+    font-size: 90px;
+    left: 300px;
+    top:580px;
+    color:white;
+    font-family:'ComicBook';
+     
+}
+@font-face {
+    font-family: 'ComicBook';
+    src: url(font/ComicBook.otf);
+    
+}
+    .slide{
+    position: absolute;
+    top:1070px;
+    left:25%;
+    transform: translateX(-50%), translateY(-50%);
+    
+ }
+  
+</style>
+<body>
+<header>
+    <nav class="navbar">
+      <ul>  
+          <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
+            <div class="list">
+                <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
+                <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
+                <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
+                <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
+                <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="#"><img src="images/Elektra.png" width="75"></a>
+                <a href="#"><img src="images/punisher.png" width="75"></a>
+                 </div>
+           </li>
+          
+     </ul>
+     
+     </nav>
+     
+   <div id="headerImg">
+    <img src="images/fiskheader.jpg" height="600">
+    </div>
+    
+    
+</header>
+    <div class="profile">
+        <img src="images/wilson%20Fisk.png" width="200">
+    </div>
+    
+    <div id="char">Wilson Fisk</div>
+    <div id="text">
+    <p>
+    Claire Temple is a night shift nurse who worked at Metro-General Hospital who took care of Matt Murdock whenever he was injured during his missions as Daredevil. Meeting Jessica Jones and Luke Cage, Temple assisted them medically as they dealt with Kilgrave. However in the aftermath of a battle against the Hand, Temple was forced to reevaluate her place in the city, choosing to leave Metro-General and return to Harlem, where she came back into contact with Cage. Developing friendship with Cage, Temple became a valuable ally when he went against two crime lords, Cottonmouth and Diamondback, helping him survive a near fatal wound while also reconnecting with his past before Cage was sent back to jail, with Temple promising to wait for him to get back out.
+<!--        more at:
+http://marvelcinematicuniverse.wikia.com/wiki/Claire_Temple-->
+    </p>
+    </div>
+    <div id="bg"></div>
+    <div class="slide">   
+        <img class="slideShow" src="images/claire1.jpg" height="500" width="900">
+        <img class="slideShow" src="images/claire2.jpg" height="500" width="900">
+        <img class="slideShow" src="images/claire3.jpg" height="500" width="900">
+        <img class="slideShow" src="images/claire4.webp" height="500" width="900">
+        <img class="slideShow" src="images/claire5.jpg" height="500" width="900">
+    </div>
+   <a class= "backButton" onclick="nextImg(-1)">&#10094;</a>
+   <a class= "forwardButton" onclick="nextImg(+1)">&#10095;</a>
+<script>
+    
+    var slidePos = 1;
+display(slidePos);
+
+function nextImg(n) {
+    display(slidePos += n);
+}
+
+function display(n) {
+    var i;
+    var x = document.getElementsByClassName("slideShow");
+    if (n > x.length) {slidePos = 1} 
+    if (n < 1) {slidePos = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slidePos-1].style.display = "block"; 
+}
+    
+</script>
+</body>
+<footer>
+     <!-- table goes here-->
+        
+            <table>
+                 <tr>
+                     <td><a href="#"><img src="images/marvelicon.png" height="75" width="100"></a></td>
+                     <td> <a href="#" height="75" width="75"><img src="images/instagram.svg" height="75" width="75"></a></td>
+                     <td> <a href="#" height="75" width="75"><img src="images/twitter.png" height="75" width="75"></a></td>
+                </tr>
+
+            </table>
+</footer>
+</html>
