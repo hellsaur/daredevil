@@ -1,0 +1,156 @@
+<html>
+<head>
+    <title>DareDevil Season  1 Trailer</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    body{
+        position:absolute;
+        background-image: url("images/daredevilcomic.jpg");
+        width:100%;
+        height:1200px;
+        z-index: -10;
+    }
+    #bg{
+        position: absolute;
+        width:100%;
+        height:900px;
+        background-color: rgba(255,0,0,.5);
+        z-index: -2;
+    }
+    header{
+        background-color: black;
+        width: 100%;
+        height: 600px;
+    }
+    
+
+    .profile{
+    position: absolute;
+    top:40%;
+    left:2%;
+    transform: translateX(-50%), translateY(-50%); 
+}
+.profile img{
+    border: 20px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+}
+
+.profile2 {
+    position: absolute;
+    top:41.5%;
+    left:3.5%;
+    transform: translateX(-50%), translateY(-50%);
+    opacity: 0;
+    
+}
+
+.profile2:hover{
+    opacity: 1;
+}
+#text{
+    font-size: 20px;
+    padding:20px;
+    position: absolute;
+    left:300px;
+    top:700px;
+    height: 200px;
+    width: 600px;
+    background-color:rgba(255,255,255,.6);
+    box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+    border: 20px solid black;
+    text-align: justify;
+}
+
+    #char{
+    position: absolute;
+    font-size: 70px;
+    left: 300px;
+    top:620px;
+    color:white;
+    font-family:'ComicBook';
+    text-shadow: 2px 2px 2px 2px rgba(0,0,0,.8); 
+}
+    @font-face {
+    font-family: 'ComicBook';
+    src: url(font/ComicBook.otf);
+    
+}
+    .slide{
+    position: absolute;
+    top:1px; 
+ }
+</style>
+<body onload="display(n)">
+<header>
+    <nav class="navbar">
+      <ul>  
+          <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
+            <div class="list">
+                <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
+                <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
+                <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
+                <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
+                <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
+                <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
+                 </div>
+           </li>
+          
+     </ul>
+     
+     </nav>
+    
+    <div class="slide">   
+        <img class="slideShow" src="images/ddheader.jpg" height="600" width="100%">
+        <img class="slideShow" src="images/matt2.jpg" height="600" width="100%">
+        <img class="slideShow" src="images/matt3.png" height="600" width="100%">
+        <img class="slideShow" src="images/matt4.png" height="600" width="100%">
+        <img class="slideShow" src="images/matt5.jpg" height="600" width="100%">
+        <img class="slideShow" src="images/matt2.jpg" height="600" width="100%">
+    </div>
+
+     
+   <div id="headerImg"></div>
+    
+    
+</header>
+    <div class="profile">
+        <img src="images/Matt%20Murdock.png" width="200">
+    </div>
+    <div class="profile2">
+        <img src="images/dd2.png" width="200">
+    </div>
+    <div id="char">Matthew Murdock</div>
+    <div id="text">
+    <p>
+    Abandoned by his mother, Matt Murdock was raised by his father, boxer "Battling Jack" Murdock, in Hell's Kitchen. Realizing that rules were needed to prevent people from behaving badly, young Matt decided to study law; however, when he saved a man from an oncoming truck, it spilled a radioactive cargo that rendered Matt blind while enhancing his remaining senses. Under the harsh tutelage of blind martial arts master Stick, Matt mastered his heightened senses and became a formidable fighter. He also attended Columbia University Law School alongside his best friend, Franklin "Foggy" Nelson.
+
+<!--More on Marvel.com: http://marvel.com/universe/Daredevil_(Matthew_Murdock)#ixzz4sObB6AgW    -->
+    </p>
+    </div>
+    <div id="bg"></div>
+    
+    
+<script>
+    
+    
+    
+    
+    
+    
+</script>
+</body>
+<footer>
+     <!-- table goes here-->
+        
+            <table>
+                 <tr>
+                     <td><a href="http://marvel.com/universe/Daredevil_(Matthew_Murdock)#axzz4sOa12ErZ"><img src="images/marvelicon.png" height="75" width="100"></a></td>
+                     <td> <a href="https://www.instagram.com/daredevil/?hl=en" height="75" width="75"><img src="images/instagram.svg" height="75" width="75"></a></td>
+                     <td> <a href="https://twitter.com/daredevil?lang=en" height="75" width="75"><img src="images/twitter.png" height="75" width="75"></a></td>
+                </tr>
+
+            </table>
+</footer>
+</html>
