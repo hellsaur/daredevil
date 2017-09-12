@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>Matt Murdock</title>
+    <title>Punisher</title>
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <style>
     body{
         position:absolute;
-        background-image: url("images/daredevilcomic.jpg");
+        background-image: url("images/punisherbg.jpg");
         width:100%;
         height:1200px;
         z-index: -10;
@@ -15,7 +15,7 @@
         position: absolute;
         width:100%;
         height:900px;
-        background-color: rgba(255,0,0,.5);
+        background-color: rgba(0,0,0,.5);
         z-index: -2;
     }
     header{
@@ -24,7 +24,6 @@
         height: 600px;
     }
     
-
     .profile{
     position: absolute;
     top:40%;
@@ -32,11 +31,10 @@
     transform: translateX(-50%), translateY(-50%); 
 }
 .profile img{
-    border: 20px solid rgba(255,255,255,.5);
+    border: 20px solid rgba(255,255,255,.3);
     border-radius: 50%;
 }
-
-.profile2 {
+    .profile2 {
     position: absolute;
     top:41.5%;
     left:3.5%;
@@ -48,40 +46,41 @@
 .profile2:hover{
     opacity: 1;
 }
-#text{
+  #text{
     font-size: 20px;
     padding:20px;
     position: absolute;
     left:300px;
     top:700px;
-    height: 200px;
+    height: 320px;
     width: 600px;
     background-color:rgba(255,255,255,.6);
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
-    border: 20px solid black;
     text-align: justify;
+    border: 20px solid black;
 }
-
     #char{
     position: absolute;
-    font-size: 70px;
+    font-size: 90px;
     left: 300px;
-    top:620px;
+    top:580px;
     color:white;
     font-family:'ComicBook';
-    text-shadow: 2px 2px 2px 2px rgba(0,0,0,.8); 
+     
 }
-    @font-face {
+@font-face {
     font-family: 'ComicBook';
     src: url(font/ComicBook.otf);
     
 }
     .slide{
     position: absolute;
-    top:1px; 
+    top:1px;
+    
  }
+  
 </style>
-<body onload="display(n)">
+<body>
 <header>
     <nav class="navbar">
       <ul>  
@@ -102,40 +101,42 @@
      </nav>
     
     <div class="slide">   
-        <img class="slideShow" src="images/ddheader.jpg" height="600" width="100%">
-        <img class="slideShow" src="images/matt2.jpg" height="600" width="100%">
-        <img class="slideShow" src="images/matt3.png" height="600" width="100%">
-        <img class="slideShow" src="images/matt4.png" height="600" width="100%">
-        <img class="slideShow" src="images/matt5.jpg" height="600" width="100%">
-        <img class="slideShow" src="images/matt2.jpg" height="600" width="100%">
+        <img class="slideShow" src="images/punisherheader.jpeg" height="500" width="900">
+        <img class="slideShow" src="images/punisher1.jpg" height="500" width="900">
+        <img class="slideShow" src="images/punisher2.jpg" height="500" width="900">
+        <img class="slideShow" src="images/punisher3.jpg" height="500" width="900">
+        <img class="slideShow" src="images/punisher4.jpg" height="500" width="900">
+        <img class="slideShow" src="images/punisher5.jpg" height="500" width="900">
     </div>
-
-     
-   <div id="headerImg"></div>
+   
+   <div id="headerImg">
+    
+    </div>
     
     
 </header>
     <div class="profile">
-        <img src="images/Matt%20Murdock.png" width="200">
+        <img src="images/punisher.png" width="200">
     </div>
     <div class="profile2">
         <img src="images/profile2.png" width="200">
     </div>
-    <div id="char">Matthew Murdock</div>
+    <div id="char">The Punisher</div>
     <div id="text">
     <p>
-    Abandoned by his mother, Matt Murdock was raised by his father, boxer "Battling Jack" Murdock, in Hell's Kitchen. Realizing that rules were needed to prevent people from behaving badly, young Matt decided to study law; however, when he saved a man from an oncoming truck, it spilled a radioactive cargo that rendered Matt blind while enhancing his remaining senses. Under the harsh tutelage of blind martial arts master Stick, Matt mastered his heightened senses and became a formidable fighter. He also attended Columbia University Law School alongside his best friend, Franklin "Foggy" Nelson.
+    Born in New York to parents of Italian ancestry, Francis Castiglione is a former U.S. Marine Captain. Before Frank joined the Marines, he was studying to become a Catholic priest but changed his mind because he was unable to forgive those who did evil. Also prior to his enlistment, he married his wife Maria who was already pregnant with their first child. During his time in the United States Marine Corps (USMC), Castle graduated from Basic Training, then went on to Infantry School. Immediately following that, he went through the USMC's Reconnaissance, Force Reconnaissance, and Sniper Schools. Attaining dockets, Castle was permitted to go through U.S. Army Airborne School, and U.S. Navy Underwater Demolition Team training, becoming qualified as a Navy Seal (Sea, Air and Land). He served in the Vietnam War in a special forces unit as a point man. For heroism in the line of duty, he was decorated with numerous medals, including the Purple Heart.
 
-<!--More on Marvel.com: http://marvel.com/universe/Daredevil_(Matthew_Murdock)#ixzz4sObB6AgW    -->
+
+<!--More on Marvel.com: http://marvel.com/universe/Punisher_(Frank_Castle)#ixzz4sUN1SMk6-->
     </p>
     </div>
     <div id="bg"></div>
     
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qzDHW3CeVrM?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/sDp4AuNen0Y?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
     
-    var slidePos = 0;
+   var slidePos = 0;
     display();
 
     function display() {
@@ -156,8 +157,6 @@
         x[slidePos-1].style.display = "block"; 
         setTimeout(display, 5000);
     }
-    
-    
     
     
 </script>

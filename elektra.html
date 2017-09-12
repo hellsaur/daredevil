@@ -40,6 +40,18 @@
     border: 20px solid rgba(255,255,255,.5);
     border-radius: 50%;
 }
+    .profile2 {
+    position: absolute;
+    top:41.5%;
+    left:3.5%;
+    transform: translateX(-50%), translateY(-50%);
+    opacity: 0;
+    
+}
+
+.profile2:hover{
+    opacity: 1;
+}
   #text{
     font-size: 20px;
     padding:20px;
@@ -50,6 +62,8 @@
     width: 600px;
     background-color:rgba(255,255,255,.6);
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
+    border: 20px solid black;
+    text-align: justify;
 }
     #char{
     position: absolute;
@@ -67,10 +81,7 @@
 }
     .slide{
     position: absolute;
-    top:1070px;
-    left:25%;
-    transform: translateX(-50%), translateY(-50%);
-    
+    top:1px;
  }
   
 </style>
@@ -86,13 +97,21 @@
                 <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
                 <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
                 <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
-                <a href="#"><img src="images/punisher.png" width="75"></a>
+                <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
                  </div>
            </li>
           
      </ul>
      
      </nav>
+    <div class="slide"> 
+        <img class="slideShow" src="images/elektraheader.jpg" height="500" width="900">
+        <img class="slideShow" src="images/elektra1.jpg" height="500" width="900">
+        <img class="slideShow" src="images/elektra2.png" height="500" width="900">
+        <img class="slideShow" src="images/elektra3.jpg" height="500" width="900">
+        <img class="slideShow" src="images/elektra4.jpg" height="500" width="900">
+        <img class="slideShow" src="images/elektra5.jpg" height="500" width="900">
+    </div>
      
    <div id="headerImg">
     <img src="images/elektraheader.jpg" height="600">
@@ -103,7 +122,9 @@
     <div class="profile">
         <img src="images/Elektra.png" width="200">
     </div>
-    
+    <div class="profile2">
+        <img src="images/profile2.png" width="200">
+    </div>
     <div id="char">Elektra</div>
     <div id="text">
     <p>
@@ -113,34 +134,32 @@
     </p>
     </div>
     <div id="bg"></div>
-    <div class="slide">   
-        <img class="slideShow" src="images/fisk1.png" height="500" width="900">
-        <img class="slideShow" src="images/fisk2.jpg" height="500" width="900">
-        <img class="slideShow" src="images/fisk3.jpg" height="500" width="900">
-        <img class="slideShow" src="images/fisk4.jpg" height="500" width="900">
-        <img class="slideShow" src="images/fisk5.jpg" height="500" width="900">
-    </div>
-   <a class= "backButton" onclick="nextImg(-1)">&#10094;</a>
-   <a class= "forwardButton" onclick="nextImg(+1)">&#10095;</a>
+    
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mlhkBqQDhh0?rel=0" frameborder="0" allowfullscreen></iframe>
+    
 <script>
     
-    var slidePos = 1;
-display(slidePos);
+ var slidePos = 0;
+    display();
 
-function nextImg(n) {
-    display(slidePos += n);
-}
+    function display() {
+        var i=0;
+        var x = document.getElementsByClassName("slideShow");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
 
-function display(n) {
-    var i;
-    var x = document.getElementsByClassName("slideShow");
-    if (n > x.length) {slidePos = 1} 
-    if (n < 1) {slidePos = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+
+        slidePos++;
+
+        if (slidePos > x.length) 
+        {
+            slidePos = 1;
+        }
+
+        x[slidePos-1].style.display = "block"; 
+        setTimeout(display, 5000);
     }
-    x[slidePos-1].style.display = "block"; 
-}
     
 </script>
 </body>
