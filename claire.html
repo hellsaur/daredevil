@@ -136,21 +136,23 @@
     <div id="char">Claire Temple</div>
     <div id="text">
     <p>
-    Claire Temple is a night shift nurse who worked at Metro-General Hospital who took care of Matt Murdock whenever he was injured during his missions as Daredevil. Meeting Jessica Jones and Luke Cage, Temple assisted them medically as they dealt with Kilgrave. However in the aftermath of a battle against the Hand, Temple was forced to reevaluate her place in the city, choosing to leave Metro-General and return to Harlem, where she came back into contact with Cage. Developing friendship with Cage, Temple became a valuable ally when he went against two crime lords, Cottonmouth and Diamondback, helping him survive a near fatal wound while also reconnecting with his past before Cage was sent back to jail, with Temple promising to wait for him to get back out.
+        Claire Temple is a night shift nurse who worked at Metro-General Hospital who took care of Matt Murdock whenever he was injured during his missions as Daredevil. Meeting Jessica Jones and Luke Cage, Temple assisted them medically as they dealt with Kilgrave. However in the aftermath of a battle against the Hand, Temple was forced to reevaluate her place in the city, choosing to leave Metro-General and return to Harlem, where she came back into contact with Cage. Developing friendship with Cage, Temple became a valuable ally when he went against two crime lords, Cottonmouth and Diamondback, helping him survive a near fatal wound while also reconnecting with his past before Cage was sent back to jail, with Temple promising to wait for him to get back out.
 <!--        more at:
 http://marvelcinematicuniverse.wikia.com/wiki/Claire_Temple-->
     </p>
-    </div>
+        
+  </div>
     <div id="bg"></div>
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/l4VPEPOxHws?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
-    
+     //slide JS
     var slidePos = 0;
     display();
 
     function display() {
         var i=0;
+        //this variable calls the element "slideShow" on the html by class.
         var x = document.getElementsByClassName("slideShow");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none"; 
@@ -158,16 +160,16 @@ http://marvelcinematicuniverse.wikia.com/wiki/Claire_Temple-->
 
 
         slidePos++;
-
+          // if the slide Image surpases the amount of images, then it will start again from image 1.
         if (slidePos > x.length) 
         {
             slidePos = 1;
         }
-
+        // this displays one image at a time.
         x[slidePos-1].style.display = "block"; 
+        //images will switch to the next every 5 seconds.
         setTimeout(display, 5000);
     }
-    
     
 </script>
 </body>

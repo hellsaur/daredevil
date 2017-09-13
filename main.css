@@ -39,13 +39,13 @@
 }
 
 .list a img{
-     border: 2px solid red;
+    border: 2px solid red;
     border-radius: 50%;
     margin: -5px;
 }
 
 .list a img:hover {
-   background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
 }
 
     
@@ -59,22 +59,6 @@ footer table tr{
     position: absolute; 
     z-index: 3;
 }
-/*
-#char{
-    position: absolute;
-    font-size: 70px;
-    left: 300px;
-    top:620px;
-    color:white;
-    font-family:'ComicBook';
-    text-shadow: 2px 2px 2px 2px rgba(0,0,0,.8); 
-}
-    @font-face {
-    font-family: 'ComicBook';
-    src: url(font/ComicBook.otf);
-    
-}
-*/
 
 .slide{
     position: absolute;
@@ -146,9 +130,13 @@ footer table tr{
 	box-shadow: 1px 1px 3px #000;
 }
 
-  .close:hover { background: #00d9ff; }
+    .close:hover { 
+    background: #00d9ff;
+    }
+
+
     .header{
-        height:100px;
+    height:100px;
     }
 
 

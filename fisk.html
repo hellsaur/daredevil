@@ -150,12 +150,13 @@
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bdmXgt7uE_Q?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
-    
-   var slidePos = 0;
+   //slide JS
+    var slidePos = 0;
     display();
 
     function display() {
         var i=0;
+        //this variable calls the element "slideShow" on the html by class.
         var x = document.getElementsByClassName("slideShow");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none"; 
@@ -163,16 +164,16 @@
 
 
         slidePos++;
-
+          // if the slide Image surpases the amount of images, then it will start again from image 1.
         if (slidePos > x.length) 
         {
             slidePos = 1;
         }
-
+        // this displays one image at a time.
         x[slidePos-1].style.display = "block"; 
+        //images will switch to the next every 5 seconds.
         setTimeout(display, 5000);
     }
-    
 </script>
 </body>
 <footer>

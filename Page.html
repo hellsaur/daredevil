@@ -1,27 +1,33 @@
 <html>
+    
 <head>
+    
     <title>Karen Page</title>
+    
     <link href="main.css" type="text/css" rel="stylesheet">
+    
 </head>
+    
 <style>
+    
     body{
-        position:absolute;
-        background-image: url("images/karenbg.jpg");
-        width:100%;
-        height:1200px;
-        z-index: -10;
+    position:absolute;
+    background-image: url("images/karenbg.jpg");
+    width:100%;
+    height:1200px;
+    z-index: -10;
     }
     #bg{
-        position: absolute;
-        width:100%;
-        height:900px;
-        background-color: rgba(255,255,255,.5);
-        z-index: -2;
+    position: absolute;
+    width:100%;
+    height:900px;
+    background-color: rgba(255,255,255,.5);
+    z-index: -2;
     }
     header{
-        background-color: black;
-        width: 100%;
-        height: 600px;
+    background-color: black;
+    width: 100%;
+    height: 600px;
     }
     
     .profile{
@@ -56,8 +62,8 @@
     width: 600px;
     background-color:rgba(255,255,255,.6);
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
-      text-align: justify;
-      border: 20px solid black;
+    text-align: justify;
+    border: 20px solid black;
 }
     #char{
     position: absolute;
@@ -68,7 +74,7 @@
     font-family:'ComicBook';
      
 }
-@font-face {
+    @font-face {
     font-family: 'ComicBook';
     src: url(font/ComicBook.otf);
     
@@ -85,8 +91,11 @@
     border: 20px solid black;
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
     }
+    
 </style>
+    
 <body>
+    
 <header>
     <nav class="navbar">
       <ul>  
@@ -117,13 +126,14 @@
    
    <div id="headerImg">
     <img src="images/karenheader.webp" height="600">
-    </div>
+   </div>
     
     
 </header>
     <div class="profile">
         <img src="images/Karen%20Page.png" width="200">
     </div>
+    
     <div class="profile2">
         <img src="images/karen2.png" width="200">
     </div>
@@ -140,12 +150,13 @@
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/QJh-gs8p44g?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
-    
-   var slidePos = 0;
+    //slide JS
+    var slidePos = 0;
     display();
 
     function display() {
         var i=0;
+        //this variable calls the element "slideShow" on the html by class.
         var x = document.getElementsByClassName("slideShow");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none"; 
@@ -153,16 +164,16 @@
 
 
         slidePos++;
-
+          // if the slide Image surpases the amount of images, then it will start again from image 1.
         if (slidePos > x.length) 
         {
             slidePos = 1;
         }
-
+        // this displays one image at a time.
         x[slidePos-1].style.display = "block"; 
+        //images will switch to the next every 5 seconds.
         setTimeout(display, 5000);
     }
-    
     
 </script>
 </body>
