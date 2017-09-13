@@ -25,22 +25,26 @@
      </ul>
      
      </nav>
-        <img id="arrow" src="images/arrow.png" width ="100">
+      <audio id="audio" controls autoplay>
+  <source src="audio/ddthemesong.mp3" type="audio/mp3">
+    </audio>
     <div id="city">
         <img src="images/city.jpg" height="900">
        
     </div>
     <div id="dd" class="image">
-        <img src="images/dd.png" height="900"> 
+        <img src="images/dd.png" height="900">
         <div class="glow"></div>
     </div>
+     <!-- on click, it calls the function so the arrow can work. -->
+     <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
 
     <div class = "animated fadeInDown">
         <img src="images/dd_logo.png" height="200" width="600">
      </div>
      
 </header> 
-    <div class="container">
+    <div class="container" id="page">
     
         <div class="babydiv" id="show">
              <div id="text">
@@ -87,7 +91,7 @@
  <script>
        //on load the animation will play
        window.onload=function() {
-    //this variable calls the element "dd" on the html by class.
+    //this variable calls the element "dd" on the html by id.
        var elem = document.getElementById("dd"); 
            
        var position = -1000; // position is on negative numbers because i want the animation to come from outside the page sliding inside the page. 
@@ -106,6 +110,11 @@
   }
         
 } 
+     // scrolls down the page by clickin the arrow on page.  
+    function scrollDown() {
+        // sets how much you want to scroll the page down by.
+    window.scrollBy(0,900);
+    }
       </script>
 </body>
 </html>
