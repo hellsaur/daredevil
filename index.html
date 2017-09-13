@@ -2,6 +2,7 @@
 
 
 <head>
+
   <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Anton|Dosis|Quicksand|Raleway" rel="stylesheet">
     
   <title>Marvel's DareDevil</title>
@@ -10,10 +11,13 @@
 </head>
 <body>
  <header> 
+     <!--this is the navigation bar -->
      <nav class="navbar">
-      <ul>  
+      <ul>  <!-- -->
         <li class="drop"><img src="images/face.png" width="100">
+            
             <div class="list">
+                
                 <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
                 <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
                 <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
@@ -21,33 +25,40 @@
                 <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
                 <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
                 <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
-                 </div>
-           </li>
+                
+            </div>
+        </li>
           
      </ul>
      
      </nav>
+     <!--this is the audio -->
 <audio id="audio" controls autoplay>
 <source src="audio/ddthemesong.mp3" type="audio/mp3">
 </audio>
+<!-- background image-->     
 <div id="city">
     <img src="images/city.jpg" height="900">
        
 </div>
+     <!--this is the animated png image -->
 <div id="dd" class="image">
     <img src="images/dd.png" height="900">
+    <!-- this is the class for the eye glow effect on css -->
     <div class="glow"></div>
 </div>
      <!-- on click, it calls the function so the arrow can work. -->
      <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
 
+     <!--this is the html for the fade down logo -->
 <div class = "animated fadeInDown">
     <img src="images/dd_logo.png" height="200" width="600">
 </div>
      
 </header> 
+    <!--this is the parent for the flexbox -->
     <div class="container" id="page">
-    
+    <!--this is the baby div inside the container -->
 <div class="babydiv" id="show">
     <div id="text">
                 <h1>Marvel's Daredevil</h1><br>
@@ -59,6 +70,7 @@
          
       
 </div>
+        <!--this are links to 3 different pages displaying each video. -->
         <div class="babydiv" id="videos">
             <a id="bd" href="trailer1.html"><img src="images/trailer1.png"></a>
             <p id="info"> Dare Devil Season 1 trailer</p>
