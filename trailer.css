@@ -52,51 +52,51 @@
 footer{
     background-color: black;
     height: 200px;
-    margin-top: 900px;
 }
  
 footer table tr{
     position: absolute; 
     z-index: 3;
 }
-#char{
+
+    #char{
     position: absolute;
     font-size: 70px;
-    left: 300px;
-    top:620px;
+    left: 250px;
+    top:80px;
     color:white;
     font-family:'ComicBook';
     text-shadow: 2px 2px 2px 2px rgba(0,0,0,.8); 
 }
-@font-face {
+    @font-face {
     font-family: 'ComicBook';
     src: url(font/ComicBook.otf);
     
 }
-
-.slide{
-    position: absolute;
-    top:1100px;
-    width:100%;
-    
-    
- }
-.slideShow{
-        
-    position: absolute;
-    height: 600px;
-    width:100%;
-    box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
-    z-index: 0;
-    }    
  
+ body{
+       
+        background-image: url("images/trailerbg.jpeg");
+        z-index: -4;
+        overflow-x: hidden;
+    }
+    #bg{
+        
+        height:1400px;
+        background-color: rgba(255,0,0,.5);
+        z-index: -2;
+    }
+
 .video{
     position: absolute;
-    top: 1100px;
-    left:500px;
+    top: 220px;
+    left:200px;
     border: 20px solid black;
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
     
 }
-    
-
+.photo{
+        position: relative;
+        top: 70%;
+        left:300px;
+    }    
