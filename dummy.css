@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
         
     }
@@ -73,7 +73,7 @@
     width:100%;
       
 }
-  .ddImage{
+  .image{
         
     position:absolute;
     left:-1000;
@@ -99,12 +99,12 @@
         
     }
     
- .fadeDown {
-    animation-name: fadeDown;
+ .fadeInDown {
+    animation-name: fadeInDown;
          }
     
   /* made the translate Y go on negative so the fade down will go from top to bottom  */
-    @keyframes fadeDown {
+    @keyframes fadeInDown {
      0% {
     opacity: 0;
     transform: translateY(-300px);
@@ -112,6 +112,10 @@
 
          }
 /* background image */
+.flex {
+    display: flex;
+}
+
  #city{
      flex: 1;
      background-image: url("images/city.jpg");
@@ -121,9 +125,7 @@
     z-index: -4;
         
     }
-     .flex {
-    display: flex;
-} 
+      
     header{
     height: 900px;
     }

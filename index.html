@@ -36,24 +36,23 @@
 <audio id="audio" controls autoplay>
 <source src="audio/ddthemesong.mp3" type="audio/mp3">
 </audio>
-<!-- background image-->     
+<!-- background image-->
+<!-- on click, it calls the function so the arrow can work. -->
+     <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
+<div class="flex">
 <div id="city">
-    <img src="images/city.jpg" height="900">
-       
-</div>
-     <!--this is the animated png image -->
-<div id="dd" class="image">
+    <div id="dd" class="image">
     <img src="images/dd.png" height="900">
     <!-- this is the class for the eye glow effect on css -->
     <div class="glow"></div>
 </div>
-     <!-- on click, it calls the function so the arrow can work. -->
-     <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
 
      <!--this is the html for the fade down logo -->
-<div class = "animated fadeInDown">
+<div class = "animated fadeDown">
     <img src="images/dd_logo.png" height="200" width="600">
 </div>
+</div>
+     </div>
      
 </header> 
     <!--this is the parent for the flexbox -->

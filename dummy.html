@@ -3,159 +3,136 @@
 
 <head>
 
+  <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Anton|Dosis|Quicksand|Raleway" rel="stylesheet">
+    
   <title>Marvel's DareDevil</title>
-<link href="index.css" type="text/css" rel="stylesheet">
+    
+  <link href="dummy.css" type="text/css" rel="stylesheet">
 </head>
-<style>
-   *{
-        margin: 0;
-        
-    }
-    
-    .glow{
-        animation: blink 3s infinite;
-        position:absolute;
-        height:50px;
-        width:280px;
-        margin-top:-590px;
-        margin-left: 330px;
-        background:radial-gradient(circle, rgb(54,0,0) 5%, transparent 40%), black;
-        z-index:-2;
-    } 
-    @keyframes blink {
-  
-  50% {
-    background: radial-gradient(circle, rgb(54,0,0) 15%, transparent 40%),rgb(54,0,0);
-    }
-}
-    
-    .image{
-        
-        position:absolute;
-        left:-1000;
-        background-size: cover;
-        background-position: center;
-        
-        }
-    
-
-    .animated {
-            
-            margin-bottom:60px;
-            margin-left:20px;
-            padding-top: -200px;
-            animation-duration: 2s;
-            animation-fill-mode: both;
-            height:130px; width: 500px;
-         }
-    .animated img {
-        position: relative;
-        top: 200px;
-        left:800px;
-        
-    }
-    
-        .fadeInDown {
-         animation-name: fadeInDown;
-         }
-    
-         
-         @keyframes fadeInDown {
-            0% {
-               opacity: 0;
-               transform: translateY(-300px);
-            }
-
-         }
-    #city{
-        position: absolute;
-        background-size:cover;
-        z-index: -4;
-        
-    }
-      
-    header{
-    height: 900px;
-    }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.show{
-    flex: 1;
-    height:400px;
-    background-color: black;
-    display:flex;
-}
-/*
-#poster{
-    margin-left: 500px;
-    margin-top: 50px;
-}
-*/
-.videos{
-    flex: 1;
-    height: 500px;
-    background-color: darkred;
-}
-.footer{
-    flex: 1;
-    height:200px;
-    background-color: black;
-}  
-</style>
- 
 <body>
+    <!--this is the parent for the flexbox -->
+    <div class="container" id="page">
  <header> 
-     <!--imae from: http://bsnscb.com/city-wallpapers/39664675.html -->
-    <div id="city">
-      <img src="images/city.jpg" width="100%" height="900">
-       
-    </div>
-     <!--image from : http://www.qygjxz.com/data/out/61/5501650-daredevil-wallpaper.png -->
+     <!--this is the navigation bar -->
+     <nav class="navbar">
+      <ul>  <!-- -->
+        <li class="drop"><img src="images/face.png" width="100">
+            
+            <div class="list">
+                
+                <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
+                <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
+                <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
+                <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
+                <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
+                <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
+                
+            </div>
+        </li>
+          
+     </ul>
+     
+   
+     </nav>
+     
+     <!--this is the audio -->
+<audio id="audio" controls autoplay>
+<source src="audio/ddthemesong.mp3" type="audio/mp3">
+</audio>
+<!-- background image-->
+     <div class="flex">
+<div id="city">
     <div id="dd" class="image">
-       <img src="images/dd.png" height="900"> 
-    <div class="glow">
+    <img src="images/dd.png" height="900">
+    <!-- this is the class for the eye glow effect on css -->
+    <div class="glow"></div>
+  </div>
+     <!-- on click, it calls the function so the arrow can work. -->
+     <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
+
+     <!--this is the html for the fade down logo -->
+<div class = "animated fadeInDown">
+    <img src="images/dd_logo.png" height="200" width="600">
+</div>
+</div>
+     </div>
+     <!--this is the animated png image -->
+
+    
+</header> 
+    
+    <!--this is the baby div inside the container -->
+<div class="babydiv" id="show">
+    <div id="text">
+                <h1>Marvel's Daredevil</h1><br>
+                 <h4><span>Release Date:</span> Apr 10, 2015</h4>
+                 <h4><span>Rating:</span> TV-MA</h4>
+                 <p><span>"Marvel's Daredevil"</span> is a live action series<br> that follows the journey of attorney<br> Matt Murdock, who in a tragic accident<br> was blinded as a boy but imbued with <br>extraordinary senses. Murdock sets up practice in<br> his old neighborhood of Hell's Kitchen, New York<br> where he now fights against injustice as a respected <br>lawyer by day and masked vigilante at night.</p>
+    </div>
+           <img id="poster" src="images/poster.jpg">
+         
+      
+</div>
+        <!--this are links to 3 different pages displaying each video. -->
+        <div class="babydiv" id="videos">
+            <a id="bd" href="trailer1.html"><img src="images/trailer1.png"></a>
+            <p id="info"> Dare Devil Season 1 trailer</p>
+            <a id="bd" href="#"><img src="images/trailer2.png"></a>
+            <p id="info2">Dare Devil Season 2 Part 1 trailer</p>
+            <a id="bd" href="#" target="_blank"><img src="images/trailer3.png"></a>
+            <p id="info3">Dare Devil Season 2 Part 2 trailer</p>
+        
+        
+        </div>
+        
+    
     
     </div>
-   </div>
-    
-<!--image from: http://static.tumblr.com/8y60per/DXKnmgo4g/dd_logo2.png -->
-    <div class = "animated fadeInDown">
-        <img src="images/dd_logo.png" height="200" width="600">
-     </div>
-      
-</header>
-    
-    <div class="container">
-        <!-- image from: http://cdn3-www.comingsoon.net/assets/uploads/gallery/marvels-daredevil-1413056220/matt-poster.jpg-->
-      <div class="show">
-        <img id="poster" src="images/poster.jpg" height="300">
-      </div>
-    <div class="videos"></div>
-    <div class="footer"></div>    
     
     
+  <footer>
     
-      </div>
+     <!-- table goes here-->
+        
+            <table>
+                 <tr>
+                     <td><a href="http://marvel.com/universe/Daredevil_(Matthew_Murdock)#axzz4sOa12ErZ"><img src="images/marvelicon.png" height="75" width="100"></a></td>
+                     <td> <a href="https://www.instagram.com/daredevil/?hl=en" height="75" width="75"><img src="images/instagram.svg" height="75" width="75"></a></td>
+                     <td> <a href="https://twitter.com/daredevil?lang=en" height="75" width="75"><img src="images/twitter.png" height="75" width="75"></a></td>
+                </tr>
 
+            </table>
+    
+ </footer>
+   
  <script>
+       //on load the animation will play
        window.onload=function() {
-       var elem = document.getElementById("dd");   
-       var pos = -1000;
+    //this variable calls the element "dd" on the html by id.
+       var elem = document.getElementById("dd"); 
+           
+       var position = -1000; // position is on negative numbers because i want the animation to come from outside the page sliding inside the page. 
+           
+        // this is the speed of the animation going in from point a to point b.   
        var id = setInterval(frame, .01);
        function frame() {
-         if (pos == 0){
+        //
+         if (position == 0){
+        //this will move the image to the left.
        } else {
-         pos++; 
-      elem.style.left = pos + 'px'; 
+         position++; 
+      elem.style.left = position + 'px'; 
      
     }
   }
         
 } 
+     // scrolls down the page by clickin the arrow on page.  
+    function scrollDown() {
+        // sets how much you want to scroll the page down by.
+    window.scrollBy(0,900);
+    }
       </script>
 </body>
 </html>
