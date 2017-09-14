@@ -18,6 +18,7 @@
             
             <div class="list">
                 
+                
                 <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
                 <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
                 <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
@@ -41,7 +42,7 @@
      <img id="arrow" src="images/arrow.png" width ="100" onclick="scrollDown()">
 <div class="flex">
 <div id="city">
-    <div id="dd" class="image">
+    <div id="dd" class="ddImage">
     <img src="images/dd.png" height="900">
     <!-- this is the class for the eye glow effect on css -->
     <div class="glow"></div>
@@ -110,7 +111,8 @@
        var position = -1000; // position is on negative numbers because i want the animation to come from outside the page sliding inside the page. 
            
         // this is the speed of the animation going in from point a to point b.   
-       var id = setInterval(frame, .01);
+       var id = setInterval(frame, 1);
+           
        function frame() {
         //
          if (position == 0){
