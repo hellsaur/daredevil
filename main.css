@@ -87,12 +87,12 @@ footer table tr{
 
 /*modal starts here*/
 
- .modalDialog:target {
+ .specs:target {
         opacity:1;
         pointer-events: auto;
 }
 /* when opening modal*/
-    .modalDialog {
+    .specs {
 	position: fixed;
 	font-family:'ComicBook';
 	top: 0;
@@ -119,7 +119,7 @@ span{
 #modalImage{
     float: right;
 }
-    .modalDialog > div {
+    .specs > div {
 	width: 800px;
     height: 450px;
 	position: relative;
