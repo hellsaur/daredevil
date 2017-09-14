@@ -4,6 +4,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <style>
+/*  this is the background image  */
     body{
         position:absolute;
         background-image: url("images/clairebg.jpg");
@@ -11,6 +12,7 @@
         height:1200px;
         z-index: -10;
     }
+/*  this is the transparent background  */
     #bg{
         position: absolute;
         width:100%;
@@ -24,12 +26,6 @@
         height: 600px;
     }
     
-    #headerImg{
-        background: cover;
-        margin-left: 150px;
-         box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
-
-    }
     .profile{
     position: absolute;
     top:40%;
@@ -65,6 +61,7 @@
     border: 20px solid black;
       text-align: justify;
 }
+/*  this is the character name  */
     #char{
     position: absolute;
     font-size: 90px;
@@ -74,11 +71,13 @@
     font-family:'ComicBook';
      
 }
+    /*  this pulls the font file in the folder into the html  */
     @font-face {
     font-family: 'ComicBook';
     src: url(font/ComicBook.otf);
     
 }
+/*    slide positioning */
     .slide{
     position: absolute;
     top:1px;
@@ -94,6 +93,7 @@
 </style>
 <body>
 <header>
+<!--    this is the nav bar -->
     <nav class="navbar">
       <ul>  
           <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
@@ -111,7 +111,7 @@
      </ul>
      
      </nav>
-    
+<!--  this is the slide images  -->
     <div class="slide"> 
         <img class="slideShow" src="images/claireheader.png" height="500" width="900">
         <img class="slideShow" src="images/claire1.jpg" height="500" width="900">
@@ -120,16 +120,13 @@
         <img class="slideShow" src="images/claire4.webp" height="500" width="900">
         <img class="slideShow" src="images/claire5.jpg" height="500" width="900">
     </div>
-     
-   <div id="headerImg">
-    <img src="images/claireheader.png" height="600">
-    </div>
     
     
 </header>
     <div class="profile">
         <img src="images/Claire%20Temple.png" width="200">
     </div>
+    <!-- modol placed on the hover image so on click will dsplay the modol -->
     <div class="profile2">
         <a href="#openModal" style="position: absolute"><img src="images/temple2.png" width="200"></a>
     </div>
@@ -143,6 +140,7 @@ http://marvelcinematicuniverse.wikia.com/wiki/Claire_Temple-->
         
   </div>
     <div id="bg"></div>
+<!--  this is the video  -->
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/l4VPEPOxHws?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
@@ -172,9 +170,10 @@ http://marvelcinematicuniverse.wikia.com/wiki/Claire_Temple-->
     }
     
 </script>
+<!--  this is the content of modal  -->
     <div id="openModal" class="modalDialog">
 	<div>
-        <a href="#close" title="Close" class="close">X</a>
+        <a href="#close" title="Close" class="closePage">X</a>
         <img id="modalImage" src="images/temple2.png" width="300">
         <div id="text2">
         <p><br><br><span> Real Name: </span> Claire Temple</p><br>

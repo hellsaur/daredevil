@@ -4,6 +4,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <style>
+/*    background image */
     body{
         position:absolute;
         background-image: url("images/fiskbg.jpg");
@@ -11,6 +12,7 @@
         height:1200px;
         z-index: -10;
     }
+/*    transparent background */
     #bg{
         position: absolute;
         width:100%;
@@ -24,12 +26,7 @@
         height: 600px;;
     }
     
-    #headerImg{
-        background: cover;
-        margin-left: 300px;
-         box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
-
-    }
+/*profile image */
     .profile{
     position: absolute;
     top:40%;
@@ -40,6 +37,7 @@
     border: 20px solid rgba(0,0,0,.3);
     border-radius: 50%;
 }
+/*   profile image displayed on hover */
     .profile2 {
     position: absolute;
     top:41.5%;
@@ -65,6 +63,7 @@
     border: 20px solid black;
     text-align: justify;
 }
+/*  character name  */
     #char{
     position: absolute;
     font-size: 90px;
@@ -74,11 +73,13 @@
     font-family:'ComicBook';
      
 }
+    /*  this pulls the font file in the folder into the html  */
 @font-face {
     font-family: 'ComicBook';
     src: url(font/ComicBook.otf);
     
 }
+/*    slide positioning*/
     .slide{
     position: absolute;
     top:1px;
@@ -95,10 +96,13 @@
 </style>
 <body>
 <header>
+<!--    this is the nav bar-->
     <nav class="navbar">
       <ul>  
           <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
+              
             <div class="list">
+                
                 <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
                 <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
                 <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
@@ -106,13 +110,14 @@
                 <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
                 <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
                 <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
+                
                  </div>
            </li>
           
      </ul>
      
      </nav>
-     
+<!--     this are the slide images -->
     <div class="slide">
         <img class="slideShow" src="images/fiskheader.jpg" height="500" width="900">
         <img class="slideShow" src="images/fisk1.png" height="500" width="900">
@@ -122,15 +127,12 @@
         <img class="slideShow" src="images/fisk5.jpg" height="500" width="900">
     </div>
    
-   <div id="headerImg">
-    
-    </div>
-    
     
 </header>
     <div class="profile">
         <img src="images/wilson%20Fisk.png" width="200">
     </div>
+    <!-- modol placed on the hover image so on click will dsplay the modol -->
     <div class="profile2">
         <a href="#openModal" style="position: absolute"><img src="images/fisk2.png" width="200"></a>
     </div>
@@ -146,7 +148,7 @@
     </p>
     </div>
     <div id="bg"></div>
-    
+<!--    this is the video-->
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bdmXgt7uE_Q?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
@@ -177,7 +179,7 @@
 </script>
     <div id="openModal" class="modalDialog">
 	<div>
-        <a href="#close" title="Close" class="close">X</a>
+        <a href="#close" title="Close" class="closePage">X</a>
         <img id="modalImage" src="images/fisk2.png" width="200">
         <div id="text2">
         <p><br><br><span> Real Name: </span> Wilson Grant Fisk "Kingpin" </p><br>

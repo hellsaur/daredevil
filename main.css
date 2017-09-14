@@ -1,6 +1,7 @@
 *{
     margin:0;
 }
+/*this is the css for the nav bar*/
 .navbar{
     margin-top: 30px;
     margin-left: 1250px;
@@ -14,6 +15,7 @@
     border: 10px solid black;
     border-radius: 50%;
 }
+/*this makes the dropdown menu works*/
 .drop:hover .list {
     display: block;
     transition: 2s;
@@ -47,7 +49,7 @@
 .list a img:hover {
     background-color: rgba(255,255,255,0.9);
 }
-
+/*nav bar ends here*/
     
 footer{
     background-color: black;
@@ -67,6 +69,7 @@ footer table tr{
     
     
  }
+/*slide css*/
 .slideShow{
         
     position: absolute;
@@ -82,12 +85,13 @@ footer table tr{
     height:100px;
     }
 
-/*modol*/
+/*modal starts here*/
 
  .modalDialog:target {
         opacity:1;
         pointer-events: auto;
 }
+/* when opening modal*/
     .modalDialog {
 	position: fixed;
 	font-family:'ComicBook';
@@ -102,6 +106,7 @@ footer table tr{
 	pointer-events: none;
     
 }
+/*text inside modal*/
    #text2{
     color:white;
        text-align: justify;
@@ -110,6 +115,7 @@ footer table tr{
 span{
     color:red;
 }
+/*this is the image inside the modal*/
 #modalImage{
     float: right;
 }
@@ -122,10 +128,10 @@ span{
 	border-radius: 10px;
 	background: black;
 }
-    
-    .close {
-	background: #606061;
-	color: #FFFFFF;
+/*    this is the closing button to close the modol*/
+    .closePage {
+	background: red;
+	color: white;
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -135,10 +141,10 @@ span{
 	text-decoration: none;
 	font-weight: bold;
 	border-radius: 12px;
-	box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px black;
 }
 
-   .close:hover { background: #00d9ff; }
+   .close:hover { background: black; }
 
 
 

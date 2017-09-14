@@ -1,6 +1,7 @@
 *{
     margin:0;
 }
+/*this si the nav bar*/
 .navbar{
     margin-top: 30px;
     margin-left: 1250px;
@@ -14,6 +15,7 @@
     border: 10px solid black;
     border-radius: 50%;
 }
+/*this makes the drop down menu work */
 .drop:hover .list {
     display: block;
     transition: 2s;
@@ -47,7 +49,7 @@
 .list a img:hover {
    background-color: rgba(255,255,255,0.9);
 }
-
+/*nav bar ends here*/
     
 footer{
     background-color: black;
@@ -58,8 +60,8 @@ footer table tr{
     position: absolute; 
     z-index: 3;
 }
-
-    #char{
+   
+    #title{
     position: absolute;
     font-size: 70px;
     left: 120px;
@@ -75,11 +77,12 @@ footer table tr{
 }
  
  body{
-       
+/*      background image */
         background-image: url("images/trailerbg.jpeg");
         z-index: -4;
         overflow-x: hidden;
     }
+/*transparent background*/
     #bg{
         
         height:1400px;

@@ -9,7 +9,7 @@
 </head>
     
 <style>
-    
+/*     backgroundimage */
     body{
         position:absolute;
         background-image: url("images/daredevilcomic.jpg");
@@ -17,6 +17,7 @@
         height:1200px;
         z-index: -10;
     }
+/*    transparent background */
     #bg{
         position: absolute;
         width:100%;
@@ -30,7 +31,7 @@
         height: 600px;
     }
     
-
+/*  profile pic*/
    .profile{
         position: absolute;
         top:40%;
@@ -41,7 +42,7 @@
         border: 20px solid rgba(255,255,255,.5);
         border-radius: 50%;
 }
-
+/* profile pic on hover*/
 .profile2 {
         position: absolute;
         top:41.5%;
@@ -67,7 +68,7 @@
         border: 20px solid black;
         text-align: justify;
 }
-
+/*   character name */
     #char{
         position: absolute;
         font-size: 70px;
@@ -77,6 +78,7 @@
         font-family:'ComicBook';
         text-shadow: 2px 2px 2px 2px rgba(0,0,0,.8); 
 }
+    /*  this pulls the font file in the folder into the html  */
         @font-face {
         font-family: 'ComicBook';
         src: url(font/ComicBook.otf);
@@ -115,7 +117,7 @@
      </ul>
      
      </nav>
-    
+<!--  slideshow images  -->
     <div class="slide">   
         <img class="slideShow" src="images/ddheader.jpg" height="600" width="100%">
         <img class="slideShow" src="images/matt2.jpg" height="600" width="100%">
@@ -148,11 +150,11 @@
     </p>
     </div>
     <div id="bg"></div>
-    
+    <!--  this is the video  -->
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qzDHW3CeVrM?rel=0" frameborder="0" allowfullscreen></iframe>
     
 <script>
-    //slide JS
+    //slide.
     var slidePos = 0;
     display();
 
@@ -181,10 +183,10 @@
     
     
 </script>
-
+<!-- this is the content of the modal-->
 <div id="openModal" class="modalDialog">
 	<div>
-        <a href="#close" title="Close" class="close">X</a>
+        <a href="#close" title="Close" class="closePage">X</a>
         <img id="modalImage" src="images/dd2.png" width="300">
         <div id="text2">
         <p><br><br><span>Real Name:</span>   Matthew Michael Murdock</p><br>

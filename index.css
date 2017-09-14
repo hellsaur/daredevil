@@ -109,6 +109,7 @@
             }
 
          }
+/* background image */
  #city{
     position: absolute;
     background-size:cover;
@@ -119,12 +120,13 @@
     header{
     height: 900px;
     }
+
 #arrow {
     position: absolute;
     top:650px;
     left:650px;
     z-index: 9;
-}
+} 
 .container {
     display: flex;
     flex-direction: column;
@@ -169,6 +171,8 @@ span{
 #bd{
     padding:20px;
 }
+
+/*infos are the text under the videos*/
 #info{
     position:absolute;
     margin-left: 120px;
@@ -200,6 +204,7 @@ footer table tr{
     position: absolute;
     margin-left:80%;
 }
+/* this code allows the sound menu to hide*/
 #audio{
     display:none;
 } 
