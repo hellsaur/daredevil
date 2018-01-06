@@ -2,7 +2,9 @@
     margin: 0;
         
     }
-/*this is the  css for the nav bar*/
+
+   
+/* ============ nav ====================== */
 .navbar{
     margin-top: 30px;
     position: fixed;
@@ -14,7 +16,7 @@
     list-style: none;
     
 }
-/*this hover allows the dropdown*/
+
 .drop:hover .list { 
     display: block;
     transition: 2s;
@@ -48,9 +50,9 @@
     background-color: rgba(255,255,255,0.9);
 }
 
-/*nav bar ends here*/
+/*==================animation effects============================*/
 
-/*eye glow. made the shape have a radial gradient of red and black added a keyframe to make the colors go from red to black and back to red infinite*/
+
  .glow{
     animation: blink 3s infinite;
     position:absolute;
@@ -69,69 +71,44 @@
     }
 }
     
-  #city{
-    width:100%;
-      
-}
-  .ddImage{
+
+  .ddface{
         
     position:absolute;
     left:-1000;
     background-size: cover;
     background-position: center;
         
-        }
-    
-
-  .animated {
-            
-    margin-bottom:60px;
-    margin-left:10px;
-    padding-top: -200px;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    height:130px; width: 500px;
-         }
- .animated img {
-    position: relative;
-    top: 200px;
-    left:800px;
-        
-    }
-    
-  /* made the translate Y go on negative so the fade down will go from top to bottom  */  
- .fadeDown {
-    animation-name: fadeDown;
-         }
-  
-    @keyframes fadeDown {
-     0% {
-    opacity: 0;
-    transform: translateY(-300px);
-            }
-
-         }
-/* background image */
- #city{
-     flex: 1;
-     background-image: url("images/city.jpg");
-     background-size: cover;
-     background-position: center;
-     height: 900px;
-    z-index: -4;
-        
-    }
-     .flex {
+}
+ .flex {
     display: flex;
-} 
+    
+    } 
+
+/* ============================================== */
     header{
     height: 900px;
     }
 
+    #city{
+        background-image: url("images/city.jpg");
+        background-size: cover;
+        height: 900px;
+        width:100%;
+       z-index: -4;
+           
+       }
+       .logo{
+       
+        margin-top:35%;
+        margin-left: 30%;
+        z-index: 93;
+    }
+       
 #arrow {
     position: absolute;
-    top:650px;
-    left:650px;
+    top:80%;
+    left:50%;
     z-index: 9;
 } 
 .container {
@@ -141,15 +118,23 @@
 }
 
 .babydiv {
-    flex: 1;
-    height: 600px;
-}
-
-
-#show {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: black;
+    color:white;
+    padding: 6em;
 }
+
+#poster{
+    height:300px;
+    padding: 1em;
+    
+}
+
 #text{
+    display:flex;
+    flex-direction: column;
     color:white;
     width:400px;
     height:200px;
@@ -165,54 +150,42 @@
 span{
     color:red;
 }
-#poster{
-    height:300px;
-    padding: 20px;
-    margin-left:400px;
+.babydiv2{
+display:flex;
+justify-content:center;
+
     
 }
 #videos {
     background-color: darkred;
-    padding: 40px;
-    height:600px ;
+
+
 }
-#bd{
-    padding:20px;
+.bd{
+ padding:2em;
 }
 
-/*infos are the text under the videos*/
-#info{
-    position:absolute;
-    margin-left: 120px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Dosis', sans-serif;
-}
-
-#info2{
-    position: absolute;
-    margin-left: 550px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Dosis', sans-serif;
-}
-#info3{
-    position: absolute;
-    margin-left: 1000px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Dosis', sans-serif;
-}
 footer{
+    display:flex;
+    justify-content: center;
     background-color: black;
-    height: 200px;
+    padding: 2em;
 }
- 
-footer table tr{
-    position: absolute;
-    margin-left:80%;
-}
+
 /* this code allows the sound menu to hide*/
 #audio{
     display:none;
 } 
+
+
+@media screen and (min-width: 700px) {
+  
+.text{
+    font-size:25px;
+}
+#poster{
+    height:600px;
+}
+
+
+}
