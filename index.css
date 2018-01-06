@@ -293,15 +293,15 @@ footer{
 #dare{
     display:block;
     position:absolute;
-    top:40%;
+    top:41%;
     left:3%;
 }
 .glow2{
     position:absolute;
-    height:20px;
-    width:100px;
-    top:57%;
-    left:35%;
+    height:50px;
+    width:90px;
+    top:55%;
+    left:37.5%;
     background:radial-gradient(circle, rgb(150,0,0) 5%, transparent 40%), black;
     animation: blink 3s infinite;
     } 

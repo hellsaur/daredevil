@@ -2,23 +2,22 @@
 <head>
     <title>Wilson Fisk</title>
     <link href="main.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
 </head>
 <style>
 /*    background image */
     body{
-        position:absolute;
-        background-image: url("images/fiskbg.jpg");
-        width:100%;
-        height:1200px;
-        z-index: -10;
+        display: flex;
+        flex-direction: column;
+        background: url("images/fiskbg.jpg")fixed;
+        background-size: cover;
     }
 /*    transparent background */
     #bg{
-        position: absolute;
+        display: flex;
         width:100%;
         height:900px;
         background-color: rgba(105,0,183,.5);
-        z-index: -2;
     }
     header{
         background-color: black;
@@ -92,6 +91,64 @@
     border: 20px solid black;
     box-shadow: 2px 5px 6px 3px rgba(0,0,0,.8);
     }
+
+    /* ==================================================================== */
+    @media only screen and (max-width: 767px) {
+        #char{
+            position: absolute;
+            left:20%;
+            top:65%;
+            font-size: 40px;
+            margin-top:.5em;
+            text-align: center;
+        }
+        
+
+        .video{
+            display:flex;
+           flex-direction: column;
+           width:300px;
+           border: 5px solid black;
+           margin:1em;
+           left:4%; 
+           top:130%;
+        }
+        #text{
+            position:absolute;
+            width: 300px;
+            font-size:14px;
+            margin:1em;
+            border:5px solid black;
+            left:0;
+            top:80%;
+        }
+        .profile{
+        position: absolute;
+        top:30%;
+        left:20%;
+        transform: translateX(-50%), translateY(-50%); 
+
+        }
+        .profile img{
+        border: 10px solid rgba(255,255,255,.5);
+        border-radius: 50%;
+}
+/* profile pic on hover*/
+        .profile2 {
+        position: absolute;
+        top:31.5%;
+        left:22.5%;
+        transform: translateX(-50%), translateY(-50%);
+        opacity: 0;
+    
+}
+    header{
+    height:300px;
+    }
+    .slideshow{
+        height:300px;
+    }
+    }
   
 </style>
 <body>
@@ -99,17 +156,17 @@
 <!--    this is the nav bar-->
     <nav class="navbar">
       <ul>  
-          <li class="drop"><a href="index.html"><img src="images/face.png" width="100"></a>
+          <li class="drop"><a href="index.html"><img id="nav-head" src="images/face.png" width="100"></a>
               
             <div class="list">
                 
-                <a href="matt.html"><img src="images/Matt%20Murdock.png" width="75"></a>
-                <a href="Page.html"><img src="images/Karen%20Page.png" width="75"></a>
-                <a href="foggy.html"><img src="images/Foggy%20Nelson.png" width="75"></a>
-                <a href="claire.html"><img src="images/Claire%20Temple.png" width="75"></a>
-                <a href="fisk.html"><img src="images/wilson%20Fisk.png" width="75"></a>
-                <a href="elektra.html"><img src="images/Elektra.png" width="75"></a>
-                <a href="punisher.html"><img src="images/punisher.png" width="75"></a>
+                <a href="matt.html"><img id="nav-child-head" src="images/Matt%20Murdock.png" width="75"></a>
+                <a href="Page.html"><img id="nav-child-head" src="images/Karen%20Page.png" width="75"></a>
+                <a href="foggy.html"><img id="nav-child-head" src="images/Foggy%20Nelson.png" width="75"></a>
+                <a href="claire.html"><img id="nav-child-head" src="images/Claire%20Temple.png" width="75"></a>
+                <a href="fisk.html"><img id="nav-child-head" src="images/wilson%20Fisk.png" width="75"></a>
+                <a href="elektra.html"><img id="nav-child-head" src="images/Elektra.png" width="75"></a>
+                <a href="punisher.html"><img id="nav-child-head" src="images/punisher.png" width="75"></a>
                 
                  </div>
            </li>
